@@ -51,4 +51,5 @@
       ];
       extraConfig = "colorscheme gruvbox";
   };
+  programs.home-manager.enable = true;
 }
