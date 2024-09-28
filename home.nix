@@ -5,7 +5,14 @@
     home.stateVersion = "24.05";
     home.packages = with pkgs; [
       htop
+      #gh
     ];
+    programs.gh = {
+      enable = true;
+      settings = {
+        git_protocol = "ssh";
+      };
+    };
     programs.git.enable = true;
     programs.git = {
       userName = "T";
