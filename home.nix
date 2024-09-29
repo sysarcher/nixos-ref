@@ -7,6 +7,7 @@
       htop
       atop
       #gh
+      kubectl
     ];
     programs.gh = {
       enable = true;
