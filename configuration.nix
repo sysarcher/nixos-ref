@@ -45,6 +45,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # SSH
+  services.openssh.enable = true;
+  users.users.taimoor.openssh.authorizedKeys.keys = [
+  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDs4sfddTqp1VNEVI62oYJWEjY+YCVQd0D+ws64HcmzeiXBE08WCBKpBa0KaipxJgbJC368R77UDkMRpANcInml73rYd/FtQSBluze8UT8p4RbuFhi+5ehEFeFdhAqxZYz1d1DAfk4hzOvUXsS66BFFHjerRWUanb0QwpMpcnNJbV9pYOP6pPSKBBwHqgd0hZzpC0QWgjhqsazINLWohaapK6ncLpJR7XpJjkmz35FBvW739t5wNqNWDmH1QvMTBMIlT/94CGJN81SQJhydhchsTEqsj/Z2BT+gUsb+y0Us7v3GsjfB84cEC8MzLwQ+JNEzgRAvL8gYCe2eu2BoM1qT /home/taimoor/.ssh/id_rsa"
+  ];
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
