@@ -45,6 +45,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Tailscale
+  services.tailscale.enable = true;
+
   # SSH
   services.openssh.enable = true;
   users.users.taimoor.openssh.authorizedKeys.keys = [
@@ -103,6 +106,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     gnome.gnome-software
+    tailscale
   ];
 
   services.flatpak.enable = true;
