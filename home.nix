@@ -8,6 +8,7 @@
       atop
       #gh
       kubectl
+      fluxcd
     ];
     programs.gh = {
       enable = true;

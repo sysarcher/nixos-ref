@@ -107,6 +107,9 @@
     wget
     gnome.gnome-software
     tailscale
+    zoom-us
+    #gnomeExtensions.topicons-plus
+    gnomeExtensions.appindicator
   ];
 
   services.flatpak.enable = true;
