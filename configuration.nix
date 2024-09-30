@@ -110,6 +110,7 @@
     zoom-us
     #gnomeExtensions.topicons-plus
     gnomeExtensions.appindicator
+    pkgs.nextcloud-client
   ];
 
   services.flatpak.enable = true;

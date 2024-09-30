@@ -46,6 +46,9 @@
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
+      shellAliases = {
+        k = "kubectl";
+      };
       oh-my-zsh = {
         enable = true;
         plugins = [ "docker-compose" "docker" ];
