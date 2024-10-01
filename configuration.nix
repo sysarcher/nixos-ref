@@ -120,7 +120,9 @@
     zoom-us
     #gnomeExtensions.topicons-plus
     gnomeExtensions.appindicator
-    pkgs.nextcloud-client
+    nextcloud-client
+    signal-desktop
+    vscode
   ];
 
   services.flatpak.enable = true;
