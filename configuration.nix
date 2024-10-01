@@ -30,9 +30,13 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos"; # Define your hostname.
+  networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Docker
+  virtualisation.docker.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -95,7 +99,7 @@
     isNormalUser = true;
     description = "taimoor";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird
     ];

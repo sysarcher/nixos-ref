@@ -9,6 +9,7 @@
       #gh
       kubectl
       fluxcd
+      nodejs_20
     ];
     programs.gh = {
       enable = true;
