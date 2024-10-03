@@ -10,6 +10,7 @@
       kubectl
       fluxcd
       nodejs_20
+      rustup
     ];
     programs.gh = {
       enable = true;
