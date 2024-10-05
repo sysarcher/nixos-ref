@@ -127,6 +127,7 @@
     nextcloud-client
     signal-desktop
     vscode
+    xournalpp
   ];
 
   services.flatpak.enable = true;
