@@ -34,16 +34,16 @@
       ];
       extraConfig = "colorscheme desert";
     };
-    #programs.neovim = {
-    #    enable = true;
-    #    defaultEditor = true;
-    #    vimAlias = true;
-    #    plugins = [
-    #      pkgs.vimPlugins.vim-nix
-    #      pkgs.vimPlugins.gruvbox
-    #    ];
-    #    extraConfig = "colorscheme gruvbox";
-    #};
+    programs.neovim = {
+        enable = true;
+        #defaultEditor = true;
+        vimAlias = true;
+        plugins = [
+          pkgs.vimPlugins.vim-nix
+          pkgs.vimPlugins.gruvbox
+        ];
+        extraConfig = "colorscheme gruvbox";
+    };
     programs.zsh = {
       enable = true;
       enableCompletion = true;
@@ -51,7 +51,6 @@
       syntaxHighlighting.enable = true;
       shellAliases = {
         k = "kubectl";
-        nvim = "flatpak run io.neovim.nvim";
       };
       oh-my-zsh = {
         enable = true;
