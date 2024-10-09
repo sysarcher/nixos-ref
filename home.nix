@@ -44,6 +44,10 @@
         ];
         extraConfig = "colorscheme gruvbox";
     };
+    programs.vscode = {
+      enable = true;
+      package = pkgs.vscodium;
+    };
     programs.zsh = {
       enable = true;
       enableCompletion = true;
