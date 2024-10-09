@@ -128,6 +128,12 @@
     signal-desktop
     vscode
     xournalpp
+    kitty
+    kitty-themes
+  ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   services.flatpak.enable = true;
