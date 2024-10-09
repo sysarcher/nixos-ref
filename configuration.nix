@@ -107,8 +107,8 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-  programs.neovim.enable = true;
-  programs.neovim.defaultEditor = true;
+  # programs.neovim.enable = true;
+  # programs.neovim.defaultEditor = true;
   programs.zsh.enable = true;
 
   # Allow unfree packages

@@ -11,6 +11,7 @@
       fluxcd
       nodejs_20
       rustup
+      ripgrep
     ];
     programs.gh = {
       enable = true;
@@ -25,7 +26,7 @@
     };
     programs.vim = {
       enable = true;
-      #defaultEditor = true;
+      defaultEditor = true;
       plugins = with pkgs.vimPlugins; [
         vim-nix
         gruvbox
@@ -33,16 +34,16 @@
       ];
       extraConfig = "colorscheme desert";
     };
-    programs.neovim = {
-        enable = true;
-        defaultEditor = true;
-        vimAlias = true;
-        plugins = [
-          pkgs.vimPlugins.vim-nix
-          pkgs.vimPlugins.gruvbox
-        ];
-        extraConfig = "colorscheme gruvbox";
-    };
+    #programs.neovim = {
+    #    enable = true;
+    #    defaultEditor = true;
+    #    vimAlias = true;
+    #    plugins = [
+    #      pkgs.vimPlugins.vim-nix
+    #      pkgs.vimPlugins.gruvbox
+    #    ];
+    #    extraConfig = "colorscheme gruvbox";
+    #};
     programs.zsh = {
       enable = true;
       enableCompletion = true;
@@ -50,6 +51,7 @@
       syntaxHighlighting.enable = true;
       shellAliases = {
         k = "kubectl";
+        nvim = "flatpak run io.neovim.nvim";
       };
       oh-my-zsh = {
         enable = true;
@@ -70,7 +72,7 @@
       enable = true;
       font = {
         name = "JetBrains Mono Nerd Font";
-        size = 14;
+        size = 12;
       };
       theme = "Catppuccin-Macchiato";
     };
