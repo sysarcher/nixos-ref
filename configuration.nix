@@ -107,8 +107,6 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-  # programs.neovim.enable = true;
-  # programs.neovim.defaultEditor = true;
   programs.zsh.enable = true;
 
   # Allow unfree packages
@@ -119,7 +117,7 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    gnome.gnome-software
+    gnome-software
     tailscale
     zoom-us
     #gnomeExtensions.topicons-plus

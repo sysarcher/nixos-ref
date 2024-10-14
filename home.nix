@@ -12,6 +12,7 @@
       nodejs_20
       rustup
       ripgrep
+      neovim
     ];
     programs.gh = {
       enable = true;
@@ -34,16 +35,16 @@
       ];
       extraConfig = "colorscheme desert";
     };
-    programs.neovim = {
-        enable = true;
-        #defaultEditor = true;
-        vimAlias = true;
-        plugins = [
-          pkgs.vimPlugins.vim-nix
-          pkgs.vimPlugins.gruvbox
-        ];
-        extraConfig = "colorscheme gruvbox";
-    };
+    #programs.neovim = {
+    #    enable = true;
+    #    #defaultEditor = true;
+    #    vimAlias = true;
+    #    plugins = [
+    #      pkgs.vimPlugins.vim-nix
+    #      pkgs.vimPlugins.gruvbox
+    #    ];
+    #    extraConfig = "colorscheme gruvbox";
+    #};
     programs.zsh = {
       enable = true;
       enableCompletion = true;
