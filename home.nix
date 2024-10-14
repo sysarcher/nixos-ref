@@ -13,6 +13,7 @@
       rustup
       ripgrep
       neovim
+      gcc
     ];
     programs.gh = {
       enable = true;
