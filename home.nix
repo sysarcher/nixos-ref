@@ -14,6 +14,7 @@
       ripgrep
       neovim
       gcc
+      jujutsu
     ];
     programs.gh = {
       enable = true;
