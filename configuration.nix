@@ -128,7 +128,6 @@
     xournalpp
     kitty
     kitty-themes
-    devenv
   ];
 
   fonts.packages = with pkgs; [
@@ -140,9 +139,6 @@
 
   system.stateVersion = "24.05"; # Did you read the comment?
   nix.settings.trusted-users = [ "root" "@wheel" "taimoor" ];
-  nix.extraOptions = ''
-        extra-substituters = https://devenv.cachix.org;
-        extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=;
-    '';
-
+  nix.settings.trusted-substituters = [ "https://cache.flox.dev" ];
+  nix.settings.trusted-public-keys = [ "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs=" ];
 }

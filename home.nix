@@ -7,14 +7,15 @@
       htop
       atop
       #gh
-      kubectl
-      fluxcd
-      nodejs_20
+      #kubectl
+      #fluxcd
+      #nodejs_20
       rustup
       ripgrep
       neovim
       gcc
       jujutsu
+      tree
     ];
     programs.gh = {
       enable = true;
