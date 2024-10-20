@@ -128,6 +128,7 @@
     xournalpp
     kitty
     kitty-themes
+    gnome-terminal
   ];
 
   fonts.packages = with pkgs; [
