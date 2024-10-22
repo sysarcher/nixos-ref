@@ -117,7 +117,7 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    gnome-software
+    gnome.gnome-software
     tailscale
     zoom-us
     #gnomeExtensions.topicons-plus
@@ -128,7 +128,7 @@
     xournalpp
     kitty
     kitty-themes
-    gnome-terminal
+    gnome.gnome-terminal
   ];
 
   fonts.packages = with pkgs; [
@@ -142,4 +142,5 @@
   nix.settings.trusted-users = [ "root" "@wheel" "taimoor" ];
   nix.settings.trusted-substituters = [ "https://cache.flox.dev" ];
   nix.settings.trusted-public-keys = [ "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs=" ];
+  nix.optimise.automatic = true;
 }
