@@ -9,7 +9,7 @@
       #gh
       #kubectl
       #fluxcd
-      nodejs_20
+      #nodejs_20
       rustup
       ripgrep
       neovim
