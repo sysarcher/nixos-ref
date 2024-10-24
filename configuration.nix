@@ -16,14 +16,14 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Mount disks
-  fileSystems."/data/disk160" = { 
-    device = "/dev/disk/by-uuid/44da1a2d-4995-4633-821f-ddc1e25b7f15";
-    fsType = "ext4";
-  };
-  fileSystems."/data/disk2T" = {
-    device = "/dev/disk/by-uuid/b02db420-4d64-4ac9-8140-13a9db5fd477";
-    fsType = "ext4";
-  };
+#  fileSystems."/data/disk160" = { 
+#    device = "/dev/disk/by-uuid/44da1a2d-4995-4633-821f-ddc1e25b7f15";
+#    fsType = "ext4";
+#  };
+#  fileSystems."/data/disk2T" = {
+#    device = "/dev/disk/by-uuid/b02db420-4d64-4ac9-8140-13a9db5fd477";
+#    fsType = "ext4";
+#  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -37,6 +37,23 @@
 
   # Docker
   virtualisation.docker.enable = true;
+
+  # KVM
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -99,7 +116,7 @@
     isNormalUser = true;
     description = "taimoor";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -117,7 +134,7 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    gnome.gnome-software
+    gnome-software
     tailscale
     zoom-us
     #gnomeExtensions.topicons-plus
@@ -128,7 +145,8 @@
     xournalpp
     kitty
     kitty-themes
-    gnome.gnome-terminal
+    gnome-terminal
+    gnome-boxes
   ];
 
   fonts.packages = with pkgs; [
