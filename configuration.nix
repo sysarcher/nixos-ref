@@ -150,7 +150,7 @@
   ];
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" ]; })
   ];
 
   services.flatpak.enable = true;
