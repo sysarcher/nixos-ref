@@ -18,7 +18,7 @@
       tree
     ];
     programs.gh = {
-      enable = true;
+      # enable = true;
       settings = {
         git_protocol = "ssh";
       };
