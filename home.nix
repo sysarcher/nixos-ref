@@ -13,7 +13,8 @@
       rustup
       ripgrep
       neovim
-      gcc
+      #gcc # required by rustup
+      clang # for rust
       jujutsu
       tree
     ];
@@ -77,7 +78,7 @@
         name = "JetBrains Mono Nerd Font";
         size = 12;
       };
-      theme = "Catppuccin-Macchiato";
+      themeFile = "Catppuccin-Macchiato";
     };
   };
 }
