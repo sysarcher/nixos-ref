@@ -14,7 +14,7 @@
       ripgrep
       neovim
       #gcc # required by rustup
-      clang # for rust
+      #clang # for rust
       jujutsu
       tree
     ];
