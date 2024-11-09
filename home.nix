@@ -13,10 +13,10 @@
       rustup
       ripgrep
       neovim
-      #gcc # required by rustup
-      #clang # for rust
+      clang # for nvim (nvchad plugin requires cc)
       jujutsu
       tree
+      bottom
     ];
     programs.gh = {
       # enable = true;
