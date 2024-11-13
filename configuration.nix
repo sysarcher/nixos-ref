@@ -10,26 +10,21 @@
       /etc/nixos/hardware-configuration.nix
       <home-manager/nixos>
       ./home.nix # Home manager 
+      ./host-setup.nix
+      #./desktop.nix
     ];
 
   # Experimental Features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Mount disks
-  fileSystems."/data/disk160" = { 
-    device = "/dev/disk/by-uuid/44da1a2d-4995-4633-821f-ddc1e25b7f15";
-    fsType = "ext4";
-  };
-  fileSystems."/data/disk2T" = {
-    device = "/dev/disk/by-uuid/b02db420-4d64-4ac9-8140-13a9db5fd477";
-    fsType = "ext4";
-  };
+  # imports = [ ./machine-configs.nix ]
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "xps"; # Define your hostname.
   networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
 
   # Enable networking
@@ -81,9 +76,6 @@
 
   # SSH
   services.openssh.enable = true;
-  users.users.taimoor.openssh.authorizedKeys.keys = [
-  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDs4sfddTqp1VNEVI62oYJWEjY+YCVQd0D+ws64HcmzeiXBE08WCBKpBa0KaipxJgbJC368R77UDkMRpANcInml73rYd/FtQSBluze8UT8p4RbuFhi+5ehEFeFdhAqxZYz1d1DAfk4hzOvUXsS66BFFHjerRWUanb0QwpMpcnNJbV9pYOP6pPSKBBwHqgd0hZzpC0QWgjhqsazINLWohaapK6ncLpJR7XpJjkmz35FBvW739t5wNqNWDmH1QvMTBMIlT/94CGJN81SQJhydhchsTEqsj/Z2BT+gUsb+y0Us7v3GsjfB84cEC8MzLwQ+JNEzgRAvL8gYCe2eu2BoM1qT /home/taimoor/.ssh/id_rsa"
-  ];
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
