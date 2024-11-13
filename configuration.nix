@@ -14,7 +14,6 @@
       ./desktop.nix
     ];
 
-  desktop.enable = false;
   # Experimental Features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
