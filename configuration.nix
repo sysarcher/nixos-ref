@@ -11,9 +11,10 @@
       <home-manager/nixos>
       ./home.nix # Home manager 
       ./host-setup.nix
-      #./desktop.nix
+      ./desktop.nix
     ];
 
+  desktop.enable = false;
   # Experimental Features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
