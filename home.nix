@@ -79,6 +79,9 @@
         size = 12;
       };
       themeFile = "Catppuccin-Macchiato";
+      settings = {
+        enable_audio_bell = false;
+      };
     };
   };
 }
