@@ -118,6 +118,12 @@
   programs.firefox.enable = true;
   programs.zsh.enable = true;
 
+  # GPG Agent
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    pinentryPackage = pkgs.pinentry-curses;
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -139,6 +145,7 @@
     kitty-themes
     gnome-terminal
     gnome-boxes
+    pinentry-curses
   ];
 
   fonts.packages = with pkgs; [

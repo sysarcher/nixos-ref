@@ -17,6 +17,7 @@
       jujutsu
       tree
       bottom
+      pass
     ];
     programs.gh = {
       # enable = true;
