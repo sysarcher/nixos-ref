@@ -18,6 +18,7 @@
       tree
       bottom
       pass
+      dig
     ];
     programs.gh = {
       # enable = true;
