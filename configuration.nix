@@ -24,7 +24,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "xps"; # Define your hostname.
   networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
 
   # Enable networking
@@ -149,7 +148,9 @@
   ];
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" ]; })
+    # (nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" ]; })
+    pkgs.nerd-fonts.jetbrains-mono
+    pkgs.nerd-fonts.fantasque-sans-mono
   ];
 
   services.flatpak.enable = true;
