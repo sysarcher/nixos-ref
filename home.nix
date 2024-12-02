@@ -77,8 +77,8 @@
     programs.kitty = {
       enable = true;
       font = {
-        name = "JetBrains Mono Nerd Font";
-        size = 12;
+        name = "FantasqueSansM Nerd Font Mono";
+        size = 14;
       };
       themeFile = "Catppuccin-Macchiato";
       settings = {
