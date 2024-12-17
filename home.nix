@@ -19,6 +19,7 @@
       bottom
       pass
       dig
+      unzip
     ];
     programs.gh = {
       # enable = true;
