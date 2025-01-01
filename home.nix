@@ -2,6 +2,7 @@
 
 {
   home-manager.users.taimoor = { pkgs, ... }: {
+    nixpkgs.config.allowUnfree = true;
     home.stateVersion = "24.05";
     home.packages = with pkgs; [
       htop
@@ -20,6 +21,7 @@
       pass
       dig
       unzip
+      mongodb-compass
     ];
     programs.gh = {
       # enable = true;
