@@ -6,7 +6,7 @@
     home.stateVersion = "24.05";
     home.packages = with pkgs; [
       htop
-      atop
+      #atop
       #gh
       #kubectl
       #fluxcd
