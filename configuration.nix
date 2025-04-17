@@ -137,7 +137,7 @@
     #gnomeExtensions.topicons-plus
     gnomeExtensions.appindicator
     nextcloud-client
-    signal-desktop
+    signal-desktop-bin
     vscode
     xournalpp
     kitty
