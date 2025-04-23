@@ -67,7 +67,7 @@
         plugins = [ "docker-compose" "docker" ];
         theme = "dst";
       };
-      initExtra = ''
+      initContent = ''
         bindkey '^f' autosuggest-accept
       '';
     };
