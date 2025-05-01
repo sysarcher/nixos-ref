@@ -145,6 +145,7 @@
     gnome-terminal
     gnome-boxes
     pinentry-curses
+    google-chrome
   ];
 
   fonts.packages = with pkgs; [
