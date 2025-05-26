@@ -154,7 +154,7 @@
     pkgs.nerd-fonts.fantasque-sans-mono
   ];
 
-  services.teamviewer.enable = true;
+  #services.teamviewer.enable = true;
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
