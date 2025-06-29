@@ -22,6 +22,9 @@
       dig
       unzip
       mongodb-compass
+      ghostscript
+      groff
+      pandoc
     ];
     programs.gh = {
       # enable = true;
