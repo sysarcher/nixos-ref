@@ -150,7 +150,19 @@
     gnome-boxes
     pinentry-curses
     google-chrome
+# pyenv
+      #gcc
+      zlib
+      gnumake
+      libffi
+      readline
+      bzip2
+      openssl
+      ncurses
+      pyenv
+      xz
   ];
+
 
   fonts.packages = with pkgs; [
     # (nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" ]; })
