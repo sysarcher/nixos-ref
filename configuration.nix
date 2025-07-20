@@ -150,6 +150,7 @@
     gnome-boxes
     pinentry-curses
     google-chrome
+    direnv
 # pyenv
       #gcc
       zlib
