@@ -25,7 +25,7 @@
       ghostscript
       groff
       pandoc
-      
+      tldr     
     ];
     home.sessionVariables = {
       PYENV_ROOT="$HOME/.pyenv";
