@@ -10,7 +10,7 @@
       #gh
       #kubectl
       #fluxcd
-      #nodejs_20
+      nodejs_24
       rustup
       ripgrep
       neovim
@@ -83,6 +83,7 @@
       };
       initContent = ''
         bindkey '^f' autosuggest-accept
+        alias fa='flox activate'
       '';
     };
   
