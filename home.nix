@@ -26,6 +26,7 @@
       groff
       pandoc
       tldr     
+      ngrok
     ];
     home.sessionVariables = {
       PYENV_ROOT="$HOME/.pyenv";
