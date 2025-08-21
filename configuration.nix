@@ -151,6 +151,7 @@
     pinentry-curses
     google-chrome
     direnv
+    graphviz
 # pyenv
       #gcc
       zlib
