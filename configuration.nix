@@ -165,8 +165,6 @@
       xz
   ];
 
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = [ pkgs.gcc ];
 
   fonts.packages = with pkgs; [
     # (nerdfonts.override { fonts = [ "JetBrainsMono" "FantasqueSansMono" ]; })
