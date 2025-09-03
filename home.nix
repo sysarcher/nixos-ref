@@ -27,6 +27,7 @@
       pandoc
       tldr     
       ngrok
+      tmux
     ];
     home.sessionVariables = {
       PYENV_ROOT="$HOME/.pyenv";
