@@ -152,6 +152,7 @@
     google-chrome
     direnv
     graphviz
+    vlc
 # pyenv
       #gcc
       zlib
