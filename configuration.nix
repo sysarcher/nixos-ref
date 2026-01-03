@@ -130,6 +130,17 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  nix.gc = {
+    automatic = true;
+    dates = [ "weekly" ];
+    options = "--delete-older-than 14d";
+  };
+  
+  nix.optimise = {
+    automatic = true;
+    dates = [ "monthly" ];
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -183,5 +194,4 @@
   nix.settings.trusted-users = [ "root" "@wheel" "taimoor" ];
   nix.settings.trusted-substituters = [ "https://cache.flox.dev" ];
   nix.settings.trusted-public-keys = [ "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs=" ];
-  nix.optimise.automatic = true;
 }

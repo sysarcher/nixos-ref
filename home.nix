@@ -28,6 +28,7 @@
       tldr     
       ngrok
       tmux
+      unixtools.net-tools
     ];
     home.sessionVariables = {
       PYENV_ROOT="$HOME/.pyenv";
