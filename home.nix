@@ -5,8 +5,6 @@
   home.homeDirectory = "/home/taimoor";
   home.stateVersion = "24.05";
 
-  nixpkgs.config.allowUnfree = true;
-
   home.packages = with pkgs; [
     htop
     nodejs_24
