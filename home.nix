@@ -41,8 +41,8 @@
 
   programs.git = {
     enable = true;
-    user.name = "T";
-    user.email = "sysarcher@users.noreply.github.com";
+    settings.user.name = "T";
+    settings.user.email = "sysarcher@users.noreply.github.com";
   };
 
   programs.vim = {
