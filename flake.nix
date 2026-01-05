@@ -11,20 +11,24 @@
     };
   };
 
-  outputs = { self, nixpkgs, unstable, home-manager,  ... }:
+  outputs = { self, nixpkgs, unstable, home-manager, ... }:
   let
     system = "x86_64-linux";
-  in {
-    nixosConfigurations.hp = nixpkgs.lib.nixosSystem {
+    
+    # Helper function to create a host configuration
+    mkHost = hostname: nixpkgs.lib.nixosSystem {
       inherit system;
+      specialArgs = { inherit unstable; };
       modules = [
-        ./configuration.nix
-
-
+        # Host-specific configuration
+        ./hosts/${hostname}
+        
+        # Allow unfree packages
         ({ ... }: {
           nixpkgs.config.allowUnfree = true;
         })
 
+        # Unstable packages overlay
         ({ pkgs, ... }:
           let
             unstablePkgs = import unstable {
@@ -38,7 +42,7 @@
           }
         )
 
-
+        # Home manager configuration
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -46,6 +50,15 @@
           home-manager.users.taimoor = import ./home.nix;
         }
       ];
+    };
+  in {
+    nixosConfigurations = {
+      # Define your hosts here
+      hp = mkHost "hp";
+      
+      # Example: Add more hosts like this:
+      # laptop = mkHost "laptop";
+      # server = mkHost "server";
     };
   };
 }
