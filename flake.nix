@@ -55,6 +55,7 @@
     nixosConfigurations = {
       # Define your hosts here
       hp = mkHost "hp";
+      xps = mkHost "xps";
       
       # Example: Add more hosts like this:
       # laptop = mkHost "laptop";
