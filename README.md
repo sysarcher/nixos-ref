@@ -2,8 +2,10 @@
 My nix reference
 
 ## Setup
-First, clone this repo and use `ln -s /this/repo/configuration.nix /etc/nixos/configuration.nix`
+First, clone this repo and run:
 
-Then, use `ln -s /this/repo/home.nix /etc/nixos/home.nix`
-
+```bash
+nix flake update
+sudo nixos-rebuild switch --flake .#hp
+```
 
