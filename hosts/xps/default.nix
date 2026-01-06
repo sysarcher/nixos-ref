@@ -5,7 +5,7 @@
     ./hardware-configuration.nix
     ../../modules/system.nix
     ../../modules/desktop-environment.nix
-    # ../../modules/virtualization.nix  # Uncomment if you want Docker/KVM on this host
+    ../../modules/virtualization.nix  # Uncomment if you want Docker/KVM on this host
   ];
 
   # Host-specific settings
