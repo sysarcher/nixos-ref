@@ -9,7 +9,7 @@
   ];
 
   # Host-specific settings
-  networking.hostName = "laptop";
+  networking.hostName = "xps";
   
   # Desktop environment for laptop
   desktop.enable = true;
