@@ -47,6 +47,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit unstable; };
           home-manager.users.taimoor = import ./home.nix;
         }
       ];

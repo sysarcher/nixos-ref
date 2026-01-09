@@ -1,5 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
+let
+  unstablePkgs = import unstable {
+    system = pkgs.system;
+    config.allowUnfree = true;
+  };
+in
 {
   home.username = "taimoor";
   home.homeDirectory = "/home/taimoor";
@@ -90,6 +96,11 @@
     };
     themeFile = "Catppuccin-Macchiato";
     settings.enable_audio_bell = false;
+  };
+
+  programs.vscode = {
+    enable = true;
+    package = unstablePkgs.vscode;
   };
 }
 
