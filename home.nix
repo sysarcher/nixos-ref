@@ -26,6 +26,7 @@
     ngrok
     tmux
     unixtools.net-tools
+    pwgen
   ];
 
   home.sessionVariables = {
