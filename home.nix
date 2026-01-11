@@ -33,6 +33,7 @@ in
     tmux
     unixtools.net-tools
     pwgen
+    element-desktop
   ];
 
   home.sessionVariables = {
