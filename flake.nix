@@ -9,17 +9,24 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    flox = {
+      url = "github:flox/flox";
+    };
   };
 
-  outputs = { self, nixpkgs, unstable, home-manager, ... }:
+  outputs = { self, nixpkgs, unstable, home-manager, flox, ... }:
   let
     system = "x86_64-linux";
     
     # Helper function to create a host configuration
     mkHost = hostname: nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit unstable; };
+      specialArgs = { inherit unstable flox; };
       modules = [
+        # Flox
+        flox.nixosModules.flox
+
         # Host-specific configuration
         ./hosts/${hostname}
         
