@@ -1,6 +1,11 @@
 {
   description = "NixOS config";
 
+  nixConfig = {
+    extra-trusted-substituters = [ "https://cache.flox.dev" ];
+    extra-trusted-public-keys = [ "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs=" ];
+  };
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -25,7 +30,7 @@
       specialArgs = { inherit unstable flox; };
       modules = [
         # Flox
-        flox.nixosModules.flox
+        # flox.nixosModules.flox
 
         # Host-specific configuration
         ./hosts/${hostname}
@@ -34,6 +39,15 @@
         ({ ... }: {
           nixpkgs.config.allowUnfree = true;
         })
+
+        ({ ... }: {
+          nix.settings.substituters = [
+            "https://cache.flox.dev"
+          ];
+          nix.settings.trusted-public-keys = [
+            "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs="
+          ];
+         })
 
         # Unstable packages overlay
         ({ pkgs, ... }:
