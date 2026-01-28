@@ -63,6 +63,12 @@
           }
         )
 
+        ({ pkgs, ... }: {
+          environment.systemPackages = with pkgs; [
+            flox.packages.${system}.default
+          ];
+         })
+
         # Home manager configuration
         home-manager.nixosModules.home-manager
         {
