@@ -96,7 +96,13 @@ in
       size = 14;
     };
     themeFile = "Catppuccin-Macchiato";
-    settings.enable_audio_bell = false;
+    settings = {
+      enable_audio_bell = false;
+      shell_integration = "no-rc";
+    };
+    keybindings = {
+      "ctrl+shift+t" = "launch --cwd=current --type=tab";
+    };
   };
 
   programs.vscode = {
