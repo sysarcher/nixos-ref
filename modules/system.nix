@@ -103,6 +103,8 @@
     direnv
     graphviz
     vlc
+    protonvpn-gui
+    proton-authenticator
     # pyenv dependencies
     gcc
     zlib

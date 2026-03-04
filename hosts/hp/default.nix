@@ -13,6 +13,8 @@
   
   # Enable desktop-specific features for this host
   desktop.enable = true;
+
+  services.teamviewer.enable = true;
   
   # System state version
   system.stateVersion = "24.05";
