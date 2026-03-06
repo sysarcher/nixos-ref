@@ -21,28 +21,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/b843f9gvy3plcvbg1xd454bnaabh694a-claude-code-2.1.39.drv",
+      "derivation": "/nix/store/cnhpcvr7564gnlj9kj26fa0i7p28fmpb-claude-code-2.1.59.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "claude-code-2.1.39",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "claude-code-2.1.59",
       "pname": "claude-code",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T04:39:52.326846Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T04:40:03.729528Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": true,
-      "version": "2.1.39",
+      "version": "2.1.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/jxyjdnn3nmvjqv7n1diiysb799qfvr60-claude-code-2.1.39"
+        "out": "/nix/store/m22wwnn4b3hlzgfq9c45ayinzljbc183-claude-code-2.1.59"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -51,28 +50,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/vm72qxdm91slf7w0zax2nhp6hbiwhbjb-claude-code-2.1.39.drv",
+      "derivation": "/nix/store/hf5m0ay3cmwy7fidsbkyml7jaaw0bwlp-claude-code-2.1.59.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "claude-code-2.1.39",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "claude-code-2.1.59",
       "pname": "claude-code",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:12:54.074117Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:10:49.438227Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": true,
-      "version": "2.1.39",
+      "version": "2.1.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/sjqfnb9anq60yi7rb835ig7bqh4hg5q8-claude-code-2.1.39"
+        "out": "/nix/store/xgv9664p3q8nmzlkkgsbzfljh4n8nz8j-claude-code-2.1.59"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -81,28 +79,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/ccd45sx0mvmwp2imi9pvr54rnsx20cc4-claude-code-2.1.39.drv",
+      "derivation": "/nix/store/8f2763wmy0w0x4skr14qlc3cgrly2qgg-claude-code-2.1.59.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "claude-code-2.1.39",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "claude-code-2.1.59",
       "pname": "claude-code",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:45:37.347096Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:39:41.387931Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": true,
-      "version": "2.1.39",
+      "version": "2.1.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ms34ydrd192vvh8bw0jfv7kdi3qm0l1x-claude-code-2.1.39"
+        "out": "/nix/store/xyhc4ys8ng585dbvriximicqkbrg5yda-claude-code-2.1.59"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -111,28 +108,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/dzgmms21s6hiywhh2ypmvrmny2mncfnk-claude-code-2.1.39.drv",
+      "derivation": "/nix/store/mx7blr6qz0rizq5z436pphddyiy2mq6z-claude-code-2.1.59.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "claude-code-2.1.39",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "claude-code-2.1.59",
       "pname": "claude-code",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T06:23:23.145961Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T06:13:30.098309Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": true,
-      "version": "2.1.39",
+      "version": "2.1.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/1730mk79ga0f71h41bb05m6lg5hs31r5-claude-code-2.1.39"
+        "out": "/nix/store/c0szkvghm2knwa6i1lgvbxjl8mlg34x5-claude-code-2.1.59"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -141,20 +137,19 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/5wpx11gm5ilfyrwcslr456n5n69j0rwl-codex-0.92.0.drv",
+      "derivation": "/nix/store/qy51yh7n201g90qi4alvbf5jk1bjbdr1-codex-0.92.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
       "name": "codex-0.92.0",
       "pname": "codex",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T04:39:52.367703Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T04:40:03.770088Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
       "version": "0.92.0",
@@ -162,7 +157,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0g6q2y2460gczshlnhkalk73rbim5alh-codex-0.92.0"
+        "out": "/nix/store/79azhj3rykb8b6d7mnc7aq5pm61q0rwb-codex-0.92.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -171,20 +166,19 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/sn7hq81mkj8ghaghz8gfbdwhs0hsz2l0-codex-0.92.0.drv",
+      "derivation": "/nix/store/m2y98sc7i4hyf0pja4zn4gxzx3zr63b2-codex-0.92.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
       "name": "codex-0.92.0",
       "pname": "codex",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:12:54.130470Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:10:49.494315Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
       "version": "0.92.0",
@@ -192,7 +186,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cwiwxk3j1ly7psmq7n04zh30h1h0yzqn-codex-0.92.0"
+        "out": "/nix/store/27xzy574i78c31ldqg6nvscpc26cqj89-codex-0.92.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -201,20 +195,19 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/b6ljbzg89fim098878n2nic1rhqxxsgc-codex-0.92.0.drv",
+      "derivation": "/nix/store/1c8ss908f8xzm7vqabx2q069hlpb6ngw-codex-0.92.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
       "name": "codex-0.92.0",
       "pname": "codex",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:45:37.388699Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:39:41.429195Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
       "version": "0.92.0",
@@ -222,7 +215,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/lif2m76n621lcdfng8whp6dzli1bm7j4-codex-0.92.0"
+        "out": "/nix/store/1j094d64hvmbmb6c8jdbz3rv03iixifm-codex-0.92.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -231,20 +224,19 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/vycvnz80rwr39hfxgsgz0r84401li7av-codex-0.92.0.drv",
+      "derivation": "/nix/store/r4fy50izw6i0xsimy1d35h4039jwgg3s-codex-0.92.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
       "name": "codex-0.92.0",
       "pname": "codex",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T06:23:23.207665Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T06:13:30.159827Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
       "version": "0.92.0",
@@ -252,7 +244,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/32i8hyh409ga3qarpky6dlwpc8j3ab3s-codex-0.92.0"
+        "out": "/nix/store/b7hjazxzl94pzz5a8zq3as7fimm7y6im-codex-0.92.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -261,28 +253,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/8qmhmwwrjf0hj831f4fxyi7w72379cx9-opencode-1.2.5.drv",
+      "derivation": "/nix/store/kandvxvzbc5jwhbla8gy115g9phv51wb-opencode-1.2.13.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "opencode-1.2.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "opencode-1.2.13",
       "pname": "opencode",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T04:40:21.186010Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T04:40:32.196093Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
-      "version": "1.2.5",
+      "version": "1.2.13",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/v4w070sd9jlqw5x36b5q4a8xf63yj63b-opencode-1.2.5"
+        "out": "/nix/store/73ipin103x086md6cl3d288w91ihyjpl-opencode-1.2.13"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -291,28 +282,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/w8z7hmjqnbb054w1zviay3nc7c3rx6j9-opencode-1.2.5.drv",
+      "derivation": "/nix/store/2gwsc0shybqm02xy8g9nqx3r7xljf0vs-opencode-1.2.13.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "opencode-1.2.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "opencode-1.2.13",
       "pname": "opencode",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:13:39.003968Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:11:34.116530Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
-      "version": "1.2.5",
+      "version": "1.2.13",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/c87wz1rf14jmnxxr8giwrj3kchnmafvd-opencode-1.2.5"
+        "out": "/nix/store/iznhg0gv20abpam5i75yqxfx674b65ln-opencode-1.2.13"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -321,28 +311,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/iiz26hcl6ifmxm5anr8vcj7l8biwvncm-opencode-1.2.5.drv",
+      "derivation": "/nix/store/7ycwsmf8qszgvdwlv9mafrrk5ry2xcmj-opencode-1.2.13.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "opencode-1.2.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "opencode-1.2.13",
       "pname": "opencode",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T05:46:07.096188Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T05:40:09.972603Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
-      "version": "1.2.5",
+      "version": "1.2.13",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/nz0rx3paky0d11zgdmzy31nc4lkqlf3f-opencode-1.2.5"
+        "out": "/nix/store/pxmnzrpa33b67vncqkjz3cxn9bmhliq6-opencode-1.2.13"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -351,28 +340,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/z9zicgzmgv68i9xqwxmba4pz7rh14zv3-opencode-1.2.5.drv",
+      "derivation": "/nix/store/881hjbphdgw8jc0jli27sfjhach70a37-opencode-1.2.13.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0182a361324364ae3f436a63005877674cf45efb",
-      "name": "opencode-1.2.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "name": "opencode-1.2.13",
       "pname": "opencode",
-      "rev": "0182a361324364ae3f436a63005877674cf45efb",
-      "rev_count": 948083,
-      "rev_date": "2026-02-17T23:04:30Z",
-      "scrape_date": "2026-02-19T06:24:12.726679Z",
+      "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+      "rev_count": 958232,
+      "rev_date": "2026-03-04T11:34:51Z",
+      "scrape_date": "2026-03-06T06:14:17.424356Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "unstable"
       ],
       "unfree": false,
-      "version": "1.2.5",
+      "version": "1.2.13",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/3y8vr4wi7klpviyqrpzlcmmr0g4g9c4l-opencode-1.2.5"
+        "out": "/nix/store/bk8s5nlb7rgi8bgxfc71nm8dvpglzblf-opencode-1.2.13"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
