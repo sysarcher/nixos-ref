@@ -16,7 +16,7 @@
     };
 
     flox = {
-      url = "github:flox/flox/v1.10.0";
+      url = "github:flox/flox/v1.11.0";
     };
   };
 
