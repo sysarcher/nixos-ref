@@ -34,6 +34,7 @@ in
     unixtools.net-tools
     pwgen
     element-desktop
+    lsof
   ];
 
   home.sessionVariables = {
