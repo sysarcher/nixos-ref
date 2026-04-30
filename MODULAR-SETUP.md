@@ -12,7 +12,7 @@ This repository contains a modular NixOS configuration that can be easily adapte
 │   ├── hp/                      # Desktop host
 │   │   ├── default.nix          # Host configuration
 │   │   └── hardware-configuration.nix
-│   └── laptop/                  # Laptop host (example)
+│   └── xps/                     # Laptop host
 │       ├── default.nix          # Host configuration
 │       └── hardware-configuration.nix
 └── modules/                     # Shared modules
@@ -146,15 +146,6 @@ Override settings from modules in your host configuration:
 # Disable a service from system.nix
 services.tailscale.enable = lib.mkForce false;
 ```
-
-## Migration from Old Structure
-
-The old files are still present for reference:
-- `configuration.nix` - Original monolithic configuration
-- `host-setup.nix` - Old host-specific settings
-- `desktop.nix` - Old desktop module
-
-These can be safely removed once you've verified the new structure works.
 
 ## Building on Current Device (hp)
 

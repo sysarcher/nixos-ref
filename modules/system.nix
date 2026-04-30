@@ -92,7 +92,6 @@
     gnomeExtensions.appindicator
     nextcloud-client
     signal-desktop-bin
-    vscode
     xournalpp
     kitty
     kitty-themes

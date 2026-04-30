@@ -49,20 +49,6 @@
           ];
          })
 
-        # Unstable packages overlay
-        ({ pkgs, ... }:
-          let
-            unstablePkgs = import unstable {
-              inherit system;
-              config.allowUnfree = true;
-            };
-          in {
-            environment.systemPackages = [
-              unstablePkgs.vscode
-            ];
-          }
-        )
-
         ({ pkgs, ... }: {
           environment.systemPackages = with pkgs; [
             flox.packages.${system}.default
@@ -91,4 +77,3 @@
     };
   };
 }
-
