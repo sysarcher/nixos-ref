@@ -35,6 +35,7 @@ in
     pwgen
     element-desktop
     lsof
+    raindrop
   ];
 
   home.sessionVariables = {
@@ -111,4 +112,3 @@ in
     package = unstablePkgs.vscode;
   };
 }
-

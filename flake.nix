@@ -23,6 +23,14 @@
   outputs = { self, nixpkgs, unstable, home-manager, flox, ... }:
   let
     system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    raindrop = pkgs.callPackage ./packages/raindrop.nix { };
+    overlay = final: prev: {
+      inherit raindrop;
+    };
     
     # Helper function to create a host configuration
     mkHost = hostname: nixpkgs.lib.nixosSystem {
@@ -38,6 +46,7 @@
         # Allow unfree packages
         ({ ... }: {
           nixpkgs.config.allowUnfree = true;
+          nixpkgs.overlays = [ overlay ];
         })
 
         ({ ... }: {
@@ -66,6 +75,11 @@
       ];
     };
   in {
+    packages.${system} = {
+      inherit raindrop;
+      default = raindrop;
+    };
+
     nixosConfigurations = {
       # Define your hosts here
       hp = mkHost "hp";

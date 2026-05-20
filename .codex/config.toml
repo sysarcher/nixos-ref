@@ -1,0 +1,3 @@
+[mcp_servers.raindrop]
+command = "/nix/store/58ky6jnsr9k2kiy5n15dsppd527cmg40-raindrop-0.1.7/bin/raindrop"
+args = [ "workshop", "mcp" ]

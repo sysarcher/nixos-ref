@@ -1,3 +1,4 @@
 # Host specific setup ignored
 #host-setup.nix
 flake.lock
+result
