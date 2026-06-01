@@ -91,7 +91,7 @@
     zoom-us
     gnomeExtensions.appindicator
     nextcloud-client
-    signal-desktop-bin
+    signal-desktop
     xournalpp
     kitty
     kitty-themes
@@ -102,7 +102,7 @@
     direnv
     graphviz
     vlc
-    protonvpn-gui
+    proton-vpn
     proton-authenticator
     # pyenv dependencies
     gcc
