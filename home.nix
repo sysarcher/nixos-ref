@@ -36,6 +36,7 @@ in
     element-desktop
     lsof
     raindrop
+    openclaw
   ];
 
   home.sessionVariables = {
