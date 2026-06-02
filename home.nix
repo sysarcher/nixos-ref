@@ -37,6 +37,7 @@ in
     lsof
     raindrop
     openclaw
+    appimage-run
     bitwarden-cli
   ];
 
