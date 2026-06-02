@@ -37,6 +37,7 @@ in
     lsof
     raindrop
     openclaw
+    bitwarden-cli
   ];
 
   home.sessionVariables = {
