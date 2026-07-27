@@ -39,6 +39,7 @@ in
     openclaw
     appimage-run
     bitwarden-cli
+    bc
   ];
 
   home.sessionVariables = {
