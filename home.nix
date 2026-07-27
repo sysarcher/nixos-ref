@@ -84,9 +84,15 @@ in
       theme = "dst";
     };
 
+    sessionVariables = {
+      TURBO_API = "https://turbo-cache.get-blended.com";
+      TURBO_TEAM = "team_blended";
+    };
+
     initContent = ''
       bindkey '^f' autosuggest-accept
       alias fa='flox activate'
+      [ -f "$HOME/.secrets/turbo-token" ] && source "$HOME/.secrets/turbo-token"
     '';
   };
 
