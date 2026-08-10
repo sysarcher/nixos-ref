@@ -49,6 +49,7 @@ in
     appimage-run
     bitwarden-cli
     bc
+    unstablePkgs.opencode-desktop
   ];
 
   home.sessionVariables = {
