@@ -1,9 +1,19 @@
 { config, pkgs, unstable, ... }:
 
 let
+  allowOpenclaw = final: prev: {
+    openclaw = prev.openclaw.overrideAttrs (old: {
+      meta = (old.meta or { }) // {
+        knownVulnerabilities = [ ];
+        insecure = false;
+      };
+    });
+  };
+
   unstablePkgs = import unstable {
     system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
+    overlays = [ allowOpenclaw ];
   };
 in
 {
@@ -24,7 +34,6 @@ in
     pass
     dig
     unzip
-    mongodb-compass
     ghostscript
     groff
     pandoc
@@ -36,7 +45,7 @@ in
     element-desktop
     lsof
     raindrop
-    openclaw
+    unstablePkgs.openclaw
     appimage-run
     bitwarden-cli
     bc
