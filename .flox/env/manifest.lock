@@ -25,17 +25,17 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/yirf86f7rrv2w8hi2aybjjb2nmqch3vz-codex-0.147.0.drv",
+      "derivation": "/nix/store/9g537wwbh735v4rlsfwka6v60ink6xjf-codex-0.147.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
       "name": "codex-0.147.0",
       "pname": "codex",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T06:14:57.206005Z",
+      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "rev_count": 1058091,
+      "rev_date": "2026-08-19T10:27:33Z",
+      "scrape_date": "2026-08-21T05:57:58.606857Z",
       "stabilities": [
         "unstable"
       ],
@@ -45,7 +45,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/siigfhhipkr2322n7a6nnhkgpdkknw1l-codex-0.147.0"
+        "out": "/nix/store/vy5ww88zmkwffaqvqb9hv0zvd9p1nc7h-codex-0.147.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -54,17 +54,17 @@
     {
       "attr_path": "gh",
       "broken": false,
-      "derivation": "/nix/store/94aix9m49v0b1bwvrd680qq12lypjq5b-gh-2.97.0.drv",
+      "derivation": "/nix/store/9ircdj1r48h51hqqd9hr565784mgyvj2-gh-2.97.0.drv",
       "description": "GitHub CLI tool",
       "install_id": "gh",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
       "name": "gh-2.97.0",
       "pname": "gh",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T06:14:58.602737Z",
+      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "rev_count": 1058091,
+      "rev_date": "2026-08-19T10:27:33Z",
+      "scrape_date": "2026-08-21T05:58:00.142391Z",
       "stabilities": [
         "unstable"
       ],
@@ -74,7 +74,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/7ayrbzjnm88xn12lfv99c1sqprlc2bwr-gh-2.97.0"
+        "out": "/nix/store/2sy0iwq5r6ha7kj3nax1wdcsh4kf4jai-gh-2.97.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -83,27 +83,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/yh5jsz675yn876ykfg1q06m5fq775s22-opencode-1.18.13.drv",
+      "derivation": "/nix/store/xnnnibbws46w7vi08wf9407ivdrz3vfp-opencode-1.18.18.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "opencode-1.18.13",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "name": "opencode-1.18.18",
       "pname": "opencode",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T06:15:44.748670Z",
+      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "rev_count": 1058091,
+      "rev_date": "2026-08-19T10:27:33Z",
+      "scrape_date": "2026-08-21T05:58:47.167629Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.18.13",
+      "version": "1.18.18",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/n5h9jhy4ivh30s38y0xp4bhgh8k7ysfk-opencode-1.18.13"
+        "out": "/nix/store/3y4zcklfn3hfk9gn08csfzd3vwfjhkl0-opencode-1.18.18"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
