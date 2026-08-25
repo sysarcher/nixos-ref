@@ -29,13 +29,13 @@
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c423e03bbafcff28bfadc6781a4a8257f205cb5",
       "name": "codex-0.147.0",
       "pname": "codex",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:57:58.606857Z",
+      "rev": "2c423e03bbafcff28bfadc6781a4a8257f205cb5",
+      "rev_count": 1059570,
+      "rev_date": "2026-08-22T00:54:23Z",
+      "scrape_date": "2026-08-23T06:00:22.737661Z",
       "stabilities": [
         "unstable"
       ],
@@ -54,27 +54,27 @@
     {
       "attr_path": "gh",
       "broken": false,
-      "derivation": "/nix/store/9ircdj1r48h51hqqd9hr565784mgyvj2-gh-2.97.0.drv",
+      "derivation": "/nix/store/cqm44sqyn2yz20x7wvzxk1vkidx2czrx-gh-2.98.0.drv",
       "description": "GitHub CLI tool",
       "install_id": "gh",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "gh-2.97.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c423e03bbafcff28bfadc6781a4a8257f205cb5",
+      "name": "gh-2.98.0",
       "pname": "gh",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:58:00.142391Z",
+      "rev": "2c423e03bbafcff28bfadc6781a4a8257f205cb5",
+      "rev_count": 1059570,
+      "rev_date": "2026-08-22T00:54:23Z",
+      "scrape_date": "2026-08-23T06:00:24.181272Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.97.0",
+      "version": "2.98.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2sy0iwq5r6ha7kj3nax1wdcsh4kf4jai-gh-2.97.0"
+        "out": "/nix/store/1aphi8rd2acs34d0b0dakrllygzkpdh1-gh-2.98.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -87,13 +87,13 @@
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c423e03bbafcff28bfadc6781a4a8257f205cb5",
       "name": "opencode-1.18.18",
       "pname": "opencode",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:58:47.167629Z",
+      "rev": "2c423e03bbafcff28bfadc6781a4a8257f205cb5",
+      "rev_count": 1059570,
+      "rev_date": "2026-08-22T00:54:23Z",
+      "scrape_date": "2026-08-23T06:01:10.785754Z",
       "stabilities": [
         "unstable"
       ],
