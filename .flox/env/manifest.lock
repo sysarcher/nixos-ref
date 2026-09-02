@@ -29,13 +29,13 @@
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
       "name": "codex-0.149.0",
       "pname": "codex",
-      "rev": "83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
-      "rev_count": 1063296,
-      "rev_date": "2026-08-28T06:55:34Z",
-      "scrape_date": "2026-08-30T06:07:13.030814Z",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T06:06:01.538518Z",
       "stabilities": [
         "unstable"
       ],
@@ -58,13 +58,13 @@
       "description": "GitHub CLI tool",
       "install_id": "gh",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
       "name": "gh-2.98.0",
       "pname": "gh",
-      "rev": "83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
-      "rev_count": 1063296,
-      "rev_date": "2026-08-28T06:55:34Z",
-      "scrape_date": "2026-08-30T06:07:14.424657Z",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T06:06:03.047197Z",
       "stabilities": [
         "unstable"
       ],
@@ -83,27 +83,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/xw806sxzdswpl2fbhfhiahbwgzblhli4-opencode-1.18.21.drv",
+      "derivation": "/nix/store/wfplkfavp1dlvkn26iqmxk3h9x3jl6xy-opencode-1.18.25.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
-      "name": "opencode-1.18.21",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "name": "opencode-1.18.25",
       "pname": "opencode",
-      "rev": "83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
-      "rev_count": 1063296,
-      "rev_date": "2026-08-28T06:55:34Z",
-      "scrape_date": "2026-08-30T06:08:01.313299Z",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T06:06:49.623203Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.18.21",
+      "version": "1.18.25",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/iqc8xfx692ym3pds6ky0vhqzscg6kgxd-opencode-1.18.21"
+        "out": "/nix/store/89s5dglfs84sk22y6mp8f0paszs25zjy-opencode-1.18.25"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
