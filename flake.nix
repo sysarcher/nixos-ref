@@ -18,9 +18,13 @@
     flox = {
       url = "github:flox/flox/v1.16.0";
     };
+
+    hermes = {
+      url = "github:NousResearch/hermes-agent";
+    };
   };
 
-  outputs = { self, nixpkgs, unstable, home-manager, flox, ... }:
+  outputs = { self, nixpkgs, unstable, home-manager, flox, hermes, ... }:
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
@@ -28,6 +32,7 @@
       config.allowUnfree = true;
     };
     raindrop = pkgs.callPackage ./packages/raindrop.nix { };
+    hermesAgent = hermes.packages.${system}.default;
     overlay = final: prev: {
       inherit raindrop;
     };
@@ -69,7 +74,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit unstable; };
+          home-manager.extraSpecialArgs = { inherit unstable hermes; };
           home-manager.users.taimoor = import ./home.nix;
         }
       ];
@@ -77,6 +82,7 @@
   in {
     packages.${system} = {
       inherit raindrop;
+      hermes-agent = hermesAgent;
       default = raindrop;
     };
 

@@ -1,22 +1,14 @@
-{ config, pkgs, unstable, ... }:
+{ config, pkgs, unstable, hermes, ... }:
 
 let
-  allowOpenclaw = final: prev: {
-    openclaw = prev.openclaw.overrideAttrs (old: {
-      meta = (old.meta or { }) // {
-        knownVulnerabilities = [ ];
-        insecure = false;
-      };
-    });
-  };
-
   unstablePkgs = import unstable {
     system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
-    overlays = [ allowOpenclaw ];
   };
 in
 {
+  imports = [ hermes.homeManagerModules.default ];
+
   home.username = "taimoor";
   home.homeDirectory = "/home/taimoor";
   home.stateVersion = "24.05";
@@ -45,11 +37,11 @@ in
     element-desktop
     lsof
     raindrop
-    unstablePkgs.openclaw
     appimage-run
     bitwarden-cli
     bc
     unstablePkgs.opencode-desktop
+    unstablePkgs.zeroclaw
   ];
 
   home.sessionVariables = {
@@ -103,6 +95,19 @@ in
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  programs.hermes-agent = {
+    enable = true;
+  };
+
+  services.hermes-agent = {
+    enable = true;
+    settings.model = {
+      provider = "deepseek";
+      default = "deepseek-flash";
+    };
+    environmentFiles = [ "/home/taimoor/.config/hermes/hermes.env" ];
   };
 
   programs.kitty = {
