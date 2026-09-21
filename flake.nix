@@ -27,15 +27,7 @@
   outputs = { self, nixpkgs, unstable, home-manager, flox, hermes, ... }:
   let
     system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-      config.allowUnfree = true;
-    };
-    raindrop = pkgs.callPackage ./packages/raindrop.nix { };
     hermesAgent = hermes.packages.${system}.default;
-    overlay = final: prev: {
-      inherit raindrop;
-    };
     
     # Helper function to create a host configuration
     mkHost = hostname: nixpkgs.lib.nixosSystem {
@@ -51,7 +43,6 @@
         # Allow unfree packages
         ({ ... }: {
           nixpkgs.config.allowUnfree = true;
-          nixpkgs.overlays = [ overlay ];
         })
 
         ({ ... }: {
@@ -81,9 +72,8 @@
     };
   in {
     packages.${system} = {
-      inherit raindrop;
       hermes-agent = hermesAgent;
-      default = raindrop;
+      default = hermesAgent;
     };
 
     nixosConfigurations = {

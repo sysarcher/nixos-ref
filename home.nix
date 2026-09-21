@@ -36,7 +36,6 @@ in
     pwgen
     element-desktop
     lsof
-    raindrop
     appimage-run
     bitwarden-cli
     bc
