@@ -39,6 +39,7 @@ in
     appimage-run
     bitwarden-cli
     bc
+    gws
     unstablePkgs.opencode-desktop
     unstablePkgs.zeroclaw
   ];
