@@ -92,6 +92,13 @@ in
     initContent = ''
       bindkey '^f' autosuggest-accept
       alias fa='flox activate'
+
+      # openclaw CLI must resolve gateway.auth.token itself; the gateway gets it
+      # via the Nix-generated wrapper, but CLI command paths need the env var.
+      # Read it from the 0600 file so the secret never enters the Nix store.
+      if [ -r "$HOME/.config/openclaw/gateway-token" ]; then
+        export OPENCLAW_GATEWAY_TOKEN="$(cat "$HOME/.config/openclaw/gateway-token")"
+      fi
     '';
   };
 
@@ -127,6 +134,17 @@ in
     package = nix-openclaw.packages.${pkgs.stdenv.hostPlatform.system}.openclaw;
     stateDir = "/home/taimoor/.openclaw";
 
+    # Nix-managed workspace bootstrap files. Materialized into
+    # stateDir/workspace on activation and replaced each rebuild, so edit them
+    # in this repo, never in the workspace.
+    workspace.bootstrapFiles = {
+      agents = ./workspace/AGENTS.md;
+      soul = ./workspace/SOUL.md;
+      tools = ./workspace/TOOLS.md;
+      identity = ./workspace/IDENTITY.md;
+      user = ./workspace/USER.md;
+    };
+
     # DeepSeek is not built into openclaw core -- it ships as the runtime plugin
     # "deepseek" (@openclaw/deepseek-provider), which declares provider id
     # "deepseek", baseUrl https://api.deepseek.com and the model deepseek-flash.
@@ -140,9 +158,25 @@ in
     # DEEPSEEK_API_KEY=... line; a second variable there would corrupt this value.
     environment.DEEPSEEK_API_KEY = "/home/taimoor/.config/hermes/hermes.env";
 
+    # Gateway auth token: generated locally, kept out of the store. The wrapper
+    # reads this file at runtime and renders no secret into the store; config
+    # below references it by name via a SecretRef.
+    environment.OPENCLAW_GATEWAY_TOKEN = "/home/taimoor/.config/openclaw/gateway-token";
+
     config = {
       # Same model hermes runs: deepseek-flash (DeepSeek V4.1 Flash).
       agents.defaults.model = "deepseek/deepseek-flash";
+
+      # A fixed token keeps CLI/app pairing stable across gateway restarts.
+      # Without it openclaw mints a throwaway runtime token on every start.
+      gateway.auth = {
+        mode = "token";
+        token = {
+          source = "env";
+          provider = "default";
+          id = "OPENCLAW_GATEWAY_TOKEN";
+        };
+      };
 
       models.providers.deepseek.apiKey = {
         source = "env";
