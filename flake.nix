@@ -22,9 +22,13 @@
     hermes = {
       url = "github:NousResearch/hermes-agent";
     };
+
+    nix-openclaw = {
+      url = "github:openclaw/nix-openclaw";
+    };
   };
 
-  outputs = { self, nixpkgs, unstable, home-manager, flox, hermes, ... }:
+  outputs = { self, nixpkgs, unstable, home-manager, flox, hermes, nix-openclaw, ... }:
   let
     system = "x86_64-linux";
     hermesAgent = hermes.packages.${system}.default;
@@ -54,6 +58,14 @@
           ];
          })
 
+        # nix-openclaw overlay: supplies pkgs.openclaw (2026.9.5, not the
+        # insecure nixpkgs build) plus pkgs.openclawPackages. It has to be
+        # applied here, at the system level, because home-manager runs with
+        # useGlobalPkgs = true and therefore shares this pkgs set.
+        ({ ... }: {
+          nixpkgs.overlays = [ nix-openclaw.overlays.default ];
+        })
+
         ({ pkgs, ... }: {
           environment.systemPackages = with pkgs; [
             flox.packages.${system}.default
@@ -65,7 +77,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit unstable hermes; };
+          home-manager.extraSpecialArgs = { inherit unstable hermes nix-openclaw; };
           home-manager.users.taimoor = import ./home.nix;
         }
       ];

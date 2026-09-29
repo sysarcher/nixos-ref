@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, hermes, ... }:
+{ config, pkgs, unstable, hermes, nix-openclaw, ... }:
 
 let
   unstablePkgs = import unstable {
@@ -7,7 +7,10 @@ let
   };
 in
 {
-  imports = [ hermes.homeManagerModules.default ];
+  imports = [
+    hermes.homeManagerModules.default
+    nix-openclaw.homeManagerModules.openclaw
+  ];
 
   home.username = "taimoor";
   home.homeDirectory = "/home/taimoor";
@@ -109,6 +112,26 @@ in
     };
     environmentFiles = [ "/home/taimoor/.config/hermes/hermes.env" ];
   };
+
+  # Declarative OpenClaw install (nix-openclaw, first-party flake).
+  # Runtime state stays outside the store at stateDir below.
+  # package: taken from nix-openclaw's own flake output, which builds against the
+  # nixpkgs it pins. The overlay build (pkgs.openclaw) compiles against nixpkgs
+  # 26.05, whose nodejs 24.21.0 bundles SQLite 3.51.2 -- openclaw 2026.9.5 refuses
+  # to start on that ("not WAL-reset-safe"). The pinned build uses nodejs 24.20.0
+  # with SQLite 3.53.3 and starts cleanly.
+  # Model providers / channels / secrets: add under programs.openclaw.config and
+  # programs.openclaw.environment (see the "Secrets" example in the nix-openclaw README).
+  programs.openclaw = {
+    enable = true;
+    package = nix-openclaw.packages.${pkgs.stdenv.hostPlatform.system}.openclaw;
+    stateDir = "/home/taimoor/.openclaw";
+  };
+
+  # nix-openclaw's module writes ~/.config/systemd/user/openclaw-gateway.service
+  # but emits no [Install] section, so the unit is merely "linked" and never
+  # enabled -- it stays inactive. This makes it start with the user manager.
+  systemd.user.services.openclaw-gateway.Install.WantedBy = [ "default.target" ];
 
   programs.kitty = {
     enable = true;
