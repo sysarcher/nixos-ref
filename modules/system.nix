@@ -8,6 +8,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Filesystems
+  boot.supportedFilesystems = [ "btrfs" ];
+
   # Networking
   networking.nameservers = [ "1.1.1.1" "8.8.8.8" ];
   networking.networkmanager.enable = true;
@@ -115,6 +118,9 @@
     ncurses
     pyenv
     xz
+    # btrfs tooling (data disks use btrfs)
+    btrfs-progs
+    compsize
   ];
 
   # Fonts

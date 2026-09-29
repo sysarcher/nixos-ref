@@ -37,8 +37,9 @@ in {
 
     # Host-specific disk mounts (example for hp host)
     fileSystems."/data/disk160" = mkIf (config.networking.hostName == "hp") {
-      device = "/dev/disk/by-uuid/44da1a2d-4995-4633-821f-ddc1e25b7f15";
-      fsType = "ext4";
+      device = "/dev/disk/by-uuid/00f2ebe8-9512-4e76-948b-3eb5c2ef2f91";
+      fsType = "btrfs";
+      options = [ "compress=zstd:3" "noatime" ];
     };
     
     fileSystems."/data/disk2T" = mkIf (config.networking.hostName == "hp") {
