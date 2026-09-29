@@ -92,13 +92,6 @@ in
     initContent = ''
       bindkey '^f' autosuggest-accept
       alias fa='flox activate'
-
-      # openclaw CLI must resolve gateway.auth.token itself; the gateway gets it
-      # via the Nix-generated wrapper, but CLI command paths need the env var.
-      # Read it from the 0600 file so the secret never enters the Nix store.
-      if [ -r "$HOME/.config/openclaw/gateway-token" ]; then
-        export OPENCLAW_GATEWAY_TOKEN="$(cat "$HOME/.config/openclaw/gateway-token")"
-      fi
     '';
   };
 
@@ -158,11 +151,12 @@ in
     # DEEPSEEK_API_KEY=... line; a second variable there would corrupt this value.
     environment.DEEPSEEK_API_KEY = "/home/taimoor/.config/hermes/hermes.env";
 
-    # Gateway auth token: generated locally, kept out of the store. The wrapper
-    # reads this file at runtime and renders no secret into the store; config
-    # below references it by name via a SecretRef.
-    environment.OPENCLAW_GATEWAY_TOKEN = "/home/taimoor/.config/openclaw/gateway-token";
-
+    # Gateway auth token: held in openclaw's own local secret store (mutable
+    # SQLite state, seeded with `openclaw secrets store set ... --value-file`).
+    # Referencing it by source = "store" means BOTH the gateway and every CLI
+    # command path (tui, health, doctor) resolve it locally -- unlike an
+    # "env" SecretRef, which only resolves where the env var happens to be set.
+    # No secret value enters the Nix store or git.
     config = {
       # Same model hermes runs: deepseek-flash (DeepSeek V4.1 Flash).
       agents.defaults.model = "deepseek/deepseek-flash";
@@ -172,7 +166,7 @@ in
       gateway.auth = {
         mode = "token";
         token = {
-          source = "env";
+          source = "store";
           provider = "default";
           id = "OPENCLAW_GATEWAY_TOKEN";
         };
