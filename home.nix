@@ -126,6 +126,30 @@ in
     enable = true;
     package = nix-openclaw.packages.${pkgs.stdenv.hostPlatform.system}.openclaw;
     stateDir = "/home/taimoor/.openclaw";
+
+    # DeepSeek is not built into openclaw core -- it ships as the runtime plugin
+    # "deepseek" (@openclaw/deepseek-provider), which declares provider id
+    # "deepseek", baseUrl https://api.deepseek.com and the model deepseek-flash.
+    runtimePlugins = [ "deepseek" ];
+
+    # Same key hermes uses. A file-backed environment value is read by the
+    # generated gateway wrapper at runtime, and the wrapper strips a leading
+    # "KEY=" prefix, so pointing straight at hermes.env yields the bare key and
+    # keeps the secret out of the world-readable Nix store.
+    # NOTE: that strip only works while hermes.env holds a single
+    # DEEPSEEK_API_KEY=... line; a second variable there would corrupt this value.
+    environment.DEEPSEEK_API_KEY = "/home/taimoor/.config/hermes/hermes.env";
+
+    config = {
+      # Same model hermes runs: deepseek-flash (DeepSeek V4.1 Flash).
+      agents.defaults.model = "deepseek/deepseek-flash";
+
+      models.providers.deepseek.apiKey = {
+        source = "env";
+        provider = "default";
+        id = "DEEPSEEK_API_KEY";
+      };
+    };
   };
 
   # nix-openclaw's module writes ~/.config/systemd/user/openclaw-gateway.service
