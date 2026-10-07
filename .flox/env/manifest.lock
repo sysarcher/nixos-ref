@@ -1,7 +1,7 @@
 {
   "lockfile-version": 1,
   "manifest": {
-    "version": 1,
+    "schema-version": "1.18.0",
     "install": {
       "codex": {
         "pkg-path": "codex"
@@ -25,27 +25,27 @@
     {
       "attr_path": "codex",
       "broken": false,
-      "derivation": "/nix/store/1rxybg4gffmkw4pzzcmy8yhzccwfbn05-codex-0.156.1.drv",
+      "derivation": "/nix/store/8mhacwn1qnxsqknch3bgngv89f37l2w6-codex-0.160.0.drv",
       "description": "Lightweight coding agent that runs in your terminal",
       "install_id": "codex",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "name": "codex-0.156.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "name": "codex-0.160.0",
       "pname": "codex",
-      "rev": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "rev_count": 1079315,
-      "rev_date": "2026-09-25T08:03:29Z",
-      "scrape_date": "2026-09-26T06:05:30.240007Z",
+      "rev": "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "rev_count": 1086391,
+      "rev_date": "2026-10-06T04:29:54Z",
+      "scrape_date": "2026-10-07T06:08:36.907716Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.156.1",
+      "version": "0.160.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/938cs7afvdcb8f5rqz8k1a950v4i6js4-codex-0.156.1"
+        "out": "/nix/store/np442w66n363ydl8xp92lzkmdj5bih4a-codex-0.160.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -54,28 +54,28 @@
     {
       "attr_path": "gh",
       "broken": false,
-      "derivation": "/nix/store/28lpcz5i2plyilk09g8fh68fmd3im1jg-gh-2.101.0.drv",
+      "derivation": "/nix/store/b9wz5aah7dg3qy4w40yinfr9xm31znfq-gh-2.102.0.drv",
       "description": "GitHub CLI tool",
       "install_id": "gh",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "name": "gh-2.101.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "name": "gh-2.102.0",
       "pname": "gh",
-      "rev": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "rev_count": 1079315,
-      "rev_date": "2026-09-25T08:03:29Z",
-      "scrape_date": "2026-09-26T06:05:31.691035Z",
+      "rev": "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "rev_count": 1086391,
+      "rev_date": "2026-10-06T04:29:54Z",
+      "scrape_date": "2026-10-07T06:08:38.333836Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.101.0",
+      "version": "2.102.0",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/bsjdf8dh5k8sylwzgp58ip47sbpbzw5l-gh-2.101.0"
+        "debug": "/nix/store/5rvfh8abrfiryg3rc8gimjzjiak2lj9w-gh-2.102.0-debug",
+        "out": "/nix/store/66h5dr9v94x04myh2kabx06rq9763jfc-gh-2.102.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -84,27 +84,27 @@
     {
       "attr_path": "opencode",
       "broken": false,
-      "derivation": "/nix/store/6hkf3wxdaf4ac6slb7rk3njjy9dgq28d-opencode-1.18.31.drv",
+      "derivation": "/nix/store/1qpvps0s8vhz66ji67x2wg8npq6pdprc-opencode-1.18.34.drv",
       "description": "AI coding agent built for the terminal",
       "install_id": "opencode",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "name": "opencode-1.18.31",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "name": "opencode-1.18.34",
       "pname": "opencode",
-      "rev": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2",
-      "rev_count": 1079315,
-      "rev_date": "2026-09-25T08:03:29Z",
-      "scrape_date": "2026-09-26T06:06:18.105163Z",
+      "rev": "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4",
+      "rev_count": 1086391,
+      "rev_date": "2026-10-06T04:29:54Z",
+      "scrape_date": "2026-10-07T06:09:24.571455Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.18.31",
+      "version": "1.18.34",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zdq4rhg4ih6j210jia7y9g7xis9gjdm5-opencode-1.18.31"
+        "out": "/nix/store/phl68anrmlqjmhlk1ls2h71md4fim7w5-opencode-1.18.34"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
