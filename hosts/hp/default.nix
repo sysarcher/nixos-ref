@@ -14,11 +14,11 @@
   # Enable desktop-specific features for this host
   desktop.enable = true;
 
-  # 8 GiB swapfile on the root filesystem (sdc2), no hibernation
+  # 32 GiB swapfile on the root filesystem (sdb2), no hibernation
   swapDevices = [
     {
       device = "/swapfile";
-      size = 8 * 1024; # MiB
+      size = 32 * 1024; # MiB
     }
   ];
 
