@@ -16,7 +16,7 @@
     };
 
     flox = {
-      url = "github:flox/flox/v1.19.1";
+      url = "github:flox/flox/v1.19.2";
     };
 
     hermes = {
