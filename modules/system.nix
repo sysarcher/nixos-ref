@@ -31,7 +31,15 @@
   };
 
   # Services
-  services.tailscale.enable = true;
+  services.tailscale = {
+    enable = true;
+    # Required for exit node / subnet router use: enables
+    # net.ipv4.conf.all.forwarding and net.ipv6.conf.all.forwarding.
+    useRoutingFeatures = "server";
+    # Opens UDP 41641 so peers can reach this node directly instead of
+    # always relaying through DERP.
+    openFirewall = true;
+  };
   services.openssh.enable = true;
   services.printing.enable = true;
   services.flatpak.enable = true;
